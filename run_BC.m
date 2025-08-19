@@ -2,7 +2,7 @@
 % saved in a summary output file as well as individual files for each donnor and cell subtype 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-unzip('Data.zip')
+unzip('Data.zip') %data located on Zenodo at DOI: 10.5281/zenodo.16906422
 addpath("AlphaVals/")
 addpath("AlphaVals/BC")
 addpath("AlphaVals/HD")
@@ -44,3 +44,4 @@ for ii = 1:num_cell_types
 end
 
 save(outfile, 'Perror_table', 'snr_table', 'CM_all', 'Q');
+
